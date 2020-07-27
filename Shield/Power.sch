@@ -1,0 +1,349 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 7
+Title "Power"
+Date "2019-09-26"
+Rev "0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 550  2700 0    50   ~ 0
+12V..24V
+$Comp
+L Ramps_EVO:+VBED #PWR0205
+U 1 1 5D7BBD20
+P 2300 2600
+F 0 "#PWR0205" H 2300 2570 30  0001 C CNN
+F 1 "+VBED" H 2300 2758 50  0000 C CNN
+F 2 "" H 2300 2600 60  0000 C CNN
+F 3 "" H 2300 2600 60  0000 C CNN
+	1    2300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F201
+U 1 1 5D71578E
+P 1900 1200
+F 0 "F201" V 2100 1200 50  0000 C CNN
+F 1 "15A" V 2000 1200 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 1830 1200 50  0001 C CNN
+F 3 "https://www.keyelco.com/product-pdf.cfm?p=306" H 1900 1200 50  0001 C CNN
+F 4 "Keystone" V 1900 1200 50  0001 C CNN "Manufacturer"
+F 5 "3568" V 1900 1200 50  0001 C CNN "Procuct code"
+	1    1900 1200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 1200 1750 1200
+Wire Wire Line
+	1550 2600 1750 2600
+Wire Wire Line
+	1550 2700 1650 2700
+Wire Wire Line
+	2050 2600 2300 2600
+$Comp
+L power:+5V #PWR0208
+U 1 1 5D8594D7
+P 1300 7300
+F 0 "#PWR0208" H 1300 7150 50  0001 C CNN
+F 1 "+5V" H 1300 7450 50  0000 C CNN
+F 2 "" H 1300 7300 50  0001 C CNN
+F 3 "" H 1300 7300 50  0001 C CNN
+	1    1300 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0203
+U 1 1 5D85AAA6
+P 1300 7400
+F 0 "#FLG0203" H 1300 7475 50  0001 C CNN
+F 1 "PWR_FLAG" H 1300 7550 50  0000 C CNN
+F 2 "" H 1300 7400 50  0001 C CNN
+F 3 "~" H 1300 7400 50  0001 C CNN
+	1    1300 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0202
+U 1 1 5D85AD2A
+P 850 7400
+F 0 "#FLG0202" H 850 7475 50  0001 C CNN
+F 1 "PWR_FLAG" H 850 7550 50  0000 C CNN
+F 2 "" H 850 7400 50  0001 C CNN
+F 3 "~" H 850 7400 50  0001 C CNN
+	1    850  7400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	850  7300 850  7400
+Wire Wire Line
+	1300 7300 1300 7400
+Wire Notes Line
+	550  6950 550  7700
+$Comp
+L power:+3V3 #PWR0207
+U 1 1 5D81723C
+P 850 7300
+F 0 "#PWR0207" H 850 7150 50  0001 C CNN
+F 1 "+3V3" H 850 7450 50  0000 C CNN
+F 2 "" H 850 7300 50  0001 C CNN
+F 3 "" H 850 7300 50  0001 C CNN
+	1    850  7300
+	1    0    0    -1  
+$EndComp
+Text Notes 600  7050 0    50   ~ 0
+POWER
+Text Notes 550  1300 0    50   ~ 0
+12V..24V
+$Comp
+L Connector:Screw_Terminal_01x02 J201
+U 1 1 5D7022E8
+P 1350 1200
+F 0 "J201" H 1350 1300 50  0000 C CNN
+F 1 "Main supply" H 1350 1000 50  0000 C CNN
+F 2 "" H 1350 1200 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/online/portal/gb/?uri=pxc-oc-itemdetail:pid=1017503&library=gben&pcck=P-11-01-05&tab=1&selectedCategory=ALL" H 1350 1200 50  0001 C CNN
+F 4 "Phoenix contacts" H 1350 1200 50  0001 C CNN "Manufacturer"
+F 5 "1017503" H 1350 1200 50  0001 C CNN "Product code"
+	1    1350 1200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Fuse F202
+U 1 1 5D862B7D
+P 1900 2600
+F 0 "F202" V 2100 2600 50  0000 C CNN
+F 1 "25A" V 2000 2600 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Blade_Mini_Keystone_3568" V 1830 2600 50  0001 C CNN
+F 3 "https://www.keyelco.com/product-pdf.cfm?p=306" H 1900 2600 50  0001 C CNN
+F 4 "Keystone" V 1900 2600 50  0001 C CNN "Manufacturer"
+F 5 "3568" V 1900 2600 50  0001 C CNN "Procuct code"
+	1    1900 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J202
+U 1 1 5D864DE5
+P 1350 2600
+F 0 "J202" H 1350 2700 50  0000 C CNN
+F 1 "Bed power supply" H 1350 2400 50  0000 C CNN
+F 2 "" H 1350 2600 50  0001 C CNN
+F 3 "https://www.phoenixcontact.com/online/portal/gb/?uri=pxc-oc-itemdetail:pid=1017503&library=gben&pcck=P-11-01-05&tab=1&selectedCategory=ALL" H 1350 2600 50  0001 C CNN
+F 4 "Phoenix contacts" H 1350 2600 50  0001 C CNN "Manufacturer"
+F 5 "1017503" H 1350 2600 50  0001 C CNN "Product code"
+	1    1350 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Ramps_EVO:GNDBED #PWR0206
+U 1 1 5D8CD869
+P 2300 2700
+F 0 "#PWR0206" H 2300 2450 50  0001 C CNN
+F 1 "GNDBED" H 2305 2527 50  0000 C CNN
+F 2 "" H 2300 2700 50  0001 C CNN
+F 3 "" H 2300 2700 50  0001 C CNN
+	1    2300 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1200 2650 1200
+Connection ~ 2300 1200
+Wire Wire Line
+	2050 1200 2300 1200
+Wire Wire Line
+	1550 1300 1650 1300
+$Comp
+L Ramps_EVO:+VPWR #PWR0202
+U 1 1 5D7BACA7
+P 2650 1200
+F 0 "#PWR0202" H 2650 1170 30  0001 C CNN
+F 1 "+VPWR" H 2650 1350 50  0000 C CNN
+F 2 "" H 2650 1200 60  0001 C CNN
+F 3 "" H 2650 1200 60  0001 C CNN
+	1    2650 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0204
+U 1 1 5D8480E9
+P 2300 1300
+F 0 "#PWR0204" H 2300 1050 50  0001 C CNN
+F 1 "GND" H 2300 1150 50  0000 C CNN
+F 2 "" H 2300 1300 50  0001 C CNN
+F 3 "" H 2300 1300 50  0001 C CNN
+	1    2300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ramps_EVO:+VMOT #PWR0201
+U 1 1 5D75BBAC
+P 2300 1200
+F 0 "#PWR0201" H 2300 1170 30  0001 C CNN
+F 1 "+VMOT" H 2300 1350 50  0000 C CNN
+F 2 "" H 2300 1200 60  0000 C CNN
+F 3 "" H 2300 1200 60  0000 C CNN
+	1    2300 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1300 1650 2700
+Connection ~ 1650 1300
+Wire Wire Line
+	1650 1300 2300 1300
+Connection ~ 1650 2700
+Wire Wire Line
+	1650 2700 2300 2700
+Text Notes 4500 1150 0    50   ~ 0
+Stepdown to 9V
+Text GLabel 5100 1200 2    50   Output ~ 0
+VIN
+$Comp
+L power:+12V #PWR0203
+U 1 1 5D86E044
+P 4300 1200
+F 0 "#PWR0203" H 4300 1050 50  0001 C CNN
+F 1 "+12V" H 4315 1373 50  0000 C CNN
+F 2 "" H 4300 1200 50  0001 C CNN
+F 3 "" H 4300 1200 50  0001 C CNN
+	1    4300 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1200 5100 1200
+Wire Notes Line
+	3400 7700 550  7700
+Wire Notes Line
+	550  6950 3400 6950
+$Comp
+L power:+12V #PWR0209
+U 1 1 5D869310
+P 1750 7300
+F 0 "#PWR0209" H 1750 7150 50  0001 C CNN
+F 1 "+12V" H 1750 7450 50  0000 C CNN
+F 2 "" H 1750 7300 50  0001 C CNN
+F 3 "" H 1750 7300 50  0001 C CNN
+	1    1750 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 7400 1750 7300
+$Comp
+L power:PWR_FLAG #FLG0204
+U 1 1 5D868844
+P 1750 7400
+F 0 "#FLG0204" H 1750 7475 50  0001 C CNN
+F 1 "PWR_FLAG" H 1750 7550 50  0000 C CNN
+F 2 "" H 1750 7400 50  0001 C CNN
+F 3 "~" H 1750 7400 50  0001 C CNN
+	1    1750 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0201
+U 1 1 5D86B775
+P 2650 7300
+F 0 "#FLG0201" H 2650 7375 50  0001 C CNN
+F 1 "PWR_FLAG" H 2650 7450 50  0000 C CNN
+F 2 "" H 2650 7300 50  0001 C CNN
+F 3 "~" H 2650 7300 50  0001 C CNN
+	1    2650 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 7300 2650 7400
+$Comp
+L power:GND #PWR0212
+U 1 1 5D86BD2D
+P 2650 7400
+F 0 "#PWR0212" H 2650 7150 50  0001 C CNN
+F 1 "GND" H 2650 7250 50  0000 C CNN
+F 2 "" H 2650 7400 50  0001 C CNN
+F 3 "" H 2650 7400 50  0001 C CNN
+	1    2650 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ramps_EVO:+VBED #PWR0211
+U 1 1 5D86676E
+P 3100 7300
+F 0 "#PWR0211" H 3100 7150 50  0001 C CNN
+F 1 "+VBED" H 3100 7450 50  0000 C CNN
+F 2 "" H 3100 7300 50  0001 C CNN
+F 3 "" H 3100 7300 50  0001 C CNN
+	1    3100 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ramps_EVO:+VMOT #PWR0210
+U 1 1 5D865BD5
+P 2200 7300
+F 0 "#PWR0210" H 2200 7150 50  0001 C CNN
+F 1 "+VMOT" H 2200 7450 50  0000 C CNN
+F 2 "" H 2200 7300 50  0001 C CNN
+F 3 "" H 2200 7300 50  0001 C CNN
+	1    2200 7300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 7400 3100 7300
+Wire Wire Line
+	2200 7400 2200 7300
+$Comp
+L power:PWR_FLAG #FLG0206
+U 1 1 5D863EA1
+P 3100 7400
+F 0 "#FLG0206" H 3100 7475 50  0001 C CNN
+F 1 "PWR_FLAG" H 3100 7550 50  0000 C CNN
+F 2 "" H 3100 7400 50  0001 C CNN
+F 3 "~" H 3100 7400 50  0001 C CNN
+	1    3100 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0205
+U 1 1 5D861901
+P 2200 7400
+F 0 "#FLG0205" H 2200 7475 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 7550 50  0000 C CNN
+F 2 "" H 2200 7400 50  0001 C CNN
+F 3 "~" H 2200 7400 50  0001 C CNN
+	1    2200 7400
+	-1   0    0    1   
+$EndComp
+Wire Notes Line
+	3400 6950 3400 7700
+$Comp
+L power:+3.3V #PWR0108
+U 1 1 5F05FF3D
+P 6100 2000
+F 0 "#PWR0108" H 6100 1850 50  0001 C CNN
+F 1 "+3.3V" H 6115 2173 50  0000 C CNN
+F 2 "" H 6100 2000 50  0001 C CNN
+F 3 "" H 6100 2000 50  0001 C CNN
+	1    6100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0109
+U 1 1 5F06088F
+P 5250 2000
+F 0 "#PWR0109" H 5250 1850 50  0001 C CNN
+F 1 "+5V" H 5265 2173 50  0000 C CNN
+F 2 "" H 5250 2000 50  0001 C CNN
+F 3 "" H 5250 2000 50  0001 C CNN
+	1    5250 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 4500 2000 0    50   Output ~ 0
+VIN
+Text Notes 4550 2000 0    50   ~ 0
+Stepdown to 5V
+Text Notes 5350 2000 0    50   ~ 0
+Stepdown to 3V3
+$EndSCHEMATC

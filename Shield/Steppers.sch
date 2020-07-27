@@ -1,0 +1,2278 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date "2020-07-08"
+Rev "0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 3050 1400 0    60   Input ~ 0
+X_EN
+Text GLabel 3400 2400 0    50   Input ~ 0
+X_DIR
+Text GLabel 3400 2250 0    50   Input ~ 0
+X_STEP
+$Comp
+L Ramps_EVO:Pololu U301
+U 1 1 5D730620
+P 4050 1550
+F 0 "U301" H 3800 2200 60  0000 C CNN
+F 1 "X" H 4150 600 60  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 4050 1550 60  0001 C CNN
+F 3 "" H 4050 1550 60  0001 C CNN
+F 4 "" H 4050 1550 50  0001 C CNN "Manufacturer"
+F 5 "" H 4050 1550 50  0001 C CNN "Product code"
+	1    4050 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 1350 2    60   Input ~ 0
+SCK
+Text GLabel 1850 950  2    60   Input ~ 0
+MOSI
+Wire Wire Line
+	2550 1500 3400 1500
+Wire Wire Line
+	1600 1100 2550 1100
+Wire Wire Line
+	2450 1650 3400 1650
+Text GLabel 1850 2150 2    60   Output ~ 0
+MISO
+Text GLabel 1850 1750 2    60   Input ~ 0
+X_SPICS
+Wire Wire Line
+	2550 1950 3400 1950
+Wire Wire Line
+	2550 2300 2550 1950
+Wire Wire Line
+	2450 1500 2450 1650
+Connection ~ 2550 1100
+Wire Wire Line
+	2650 2100 3400 2100
+Wire Wire Line
+	2950 1200 2950 1100
+Wire Wire Line
+	2600 1100 2550 1100
+Wire Wire Line
+	3400 750  3400 1050
+Wire Wire Line
+	2800 1100 2950 1100
+Wire Wire Line
+	2550 1100 2550 1500
+Wire Wire Line
+	2650 2100 2650 2400
+Wire Wire Line
+	3400 1350 3400 1400
+Wire Wire Line
+	3050 1400 3250 1400
+Wire Wire Line
+	4850 1050 5000 1050
+$Comp
+L Ramps_EVO:Pololu U303
+U 1 1 5D73DC83
+P 4050 3550
+F 0 "U303" H 3800 4200 60  0000 C CNN
+F 1 "Y" H 4150 2600 60  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 4050 3550 60  0001 C CNN
+F 3 "" H 4050 3550 60  0001 C CNN
+	1    4050 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3400 4250 0    50   Input ~ 0
+Y_STEP
+Text GLabel 3400 4400 0    50   Input ~ 0
+Y_DIR
+Text GLabel 3000 3400 0    60   Input ~ 0
+Y_EN
+Wire Wire Line
+	3400 3400 3250 3400
+Text GLabel 1850 4150 2    60   Output ~ 0
+MISO
+Text GLabel 1850 3350 2    60   Input ~ 0
+SCK
+Text GLabel 1850 2950 2    60   Input ~ 0
+MOSI
+Wire Wire Line
+	1600 3100 2550 3100
+Wire Wire Line
+	2550 3100 2550 3500
+Wire Wire Line
+	2550 3500 3400 3500
+Wire Wire Line
+	2600 3100 2550 3100
+Connection ~ 2550 3100
+Wire Wire Line
+	2800 3100 2950 3100
+Wire Wire Line
+	2950 3100 2950 3200
+Wire Wire Line
+	2950 3200 3400 3200
+Wire Wire Line
+	4850 2750 4850 3050
+Wire Wire Line
+	4400 2750 4850 2750
+Wire Wire Line
+	3400 3050 3400 2750
+Wire Wire Line
+	2550 3950 3400 3950
+Wire Wire Line
+	3400 3650 2450 3650
+Wire Wire Line
+	2450 3650 2450 3500
+Wire Wire Line
+	2550 3950 2550 4300
+Wire Wire Line
+	2650 4100 3400 4100
+Wire Wire Line
+	2650 4400 2650 4100
+Text GLabel 1850 3750 2    60   Input ~ 0
+Y_SPICS
+Wire Wire Line
+	4850 3900 4900 3900
+Wire Wire Line
+	4850 3050 5000 3050
+Connection ~ 4850 3050
+Wire Wire Line
+	4850 3200 4850 3250
+Wire Wire Line
+	4850 3250 5000 3250
+Wire Wire Line
+	3400 3350 3400 3400
+$Comp
+L Ramps_EVO:Pololu U305
+U 1 1 5D7A61DD
+P 4050 5550
+F 0 "U305" H 3800 6200 60  0000 C CNN
+F 1 "Z" H 4150 4600 60  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 4050 5550 60  0001 C CNN
+F 3 "" H 4050 5550 60  0001 C CNN
+	1    4050 5550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1850 4950 2    60   Input ~ 0
+MOSI
+Text GLabel 3000 5400 0    60   Input ~ 0
+Z_EN
+Wire Wire Line
+	3400 5400 3400 5350
+Text GLabel 1850 6150 2    60   Output ~ 0
+MISO
+Text GLabel 1850 5350 2    60   Input ~ 0
+SCK
+Text GLabel 1850 5750 2    60   Input ~ 0
+Z_SPICS
+Wire Wire Line
+	2450 5650 3400 5650
+Wire Wire Line
+	2450 5650 2450 5500
+Wire Wire Line
+	2550 5500 3400 5500
+Wire Wire Line
+	1600 5100 2550 5100
+Wire Wire Line
+	2550 5100 2550 5500
+Wire Wire Line
+	2550 5100 2600 5100
+Connection ~ 2550 5100
+Wire Wire Line
+	2800 5100 2950 5100
+Wire Wire Line
+	2950 5100 2950 5200
+Wire Wire Line
+	4400 4750 4850 4750
+$Comp
+L Device:CP1_Small C305
+U 1 1 5D7D41D2
+P 5000 5150
+F 0 "C305" H 5091 5196 50  0000 L CNN
+F 1 "100u 35V" H 5091 5105 50  0000 L CNN
+F 2 "" H 5000 5150 50  0001 C CNN
+F 3 "" H 5000 5150 50  0001 C CNN
+	1    5000 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 5200 4850 5250
+Wire Wire Line
+	4850 5250 5000 5250
+Wire Wire Line
+	2550 5950 3400 5950
+Wire Wire Line
+	2650 6100 3400 6100
+Text GLabel 3400 6250 0    50   Input ~ 0
+Z_STEP
+Text GLabel 3400 6400 0    50   Input ~ 0
+Z_DIR
+$Comp
+L Ramps_EVO:Pololu U302
+U 1 1 5D7FE238
+P 9250 1550
+F 0 "U302" H 9000 2200 60  0000 C CNN
+F 1 "E0" H 9350 600 60  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 9250 1550 60  0001 C CNN
+F 3 "" H 9250 1550 60  0001 C CNN
+	1    9250 1550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8200 1400 0    60   Input ~ 0
+E0_EN
+Wire Wire Line
+	8200 1400 8450 1400
+Wire Wire Line
+	8600 1400 8600 1350
+Wire Wire Line
+	10150 2050 10050 2050
+Wire Wire Line
+	10050 750  10050 1050
+Wire Wire Line
+	8600 1200 8150 1200
+Wire Wire Line
+	8150 1200 8150 1100
+Wire Wire Line
+	6800 1100 7750 1100
+Wire Wire Line
+	8600 1050 8600 750 
+Connection ~ 8600 750 
+Wire Wire Line
+	8600 750  8450 750 
+$Comp
+L Device:CP1_Small C302
+U 1 1 5D8340C7
+P 10200 1150
+F 0 "C302" H 10291 1196 50  0000 L CNN
+F 1 "100u 35V" H 10291 1105 50  0000 L CNN
+F 2 "" H 10200 1150 50  0001 C CNN
+F 3 "" H 10200 1150 50  0001 C CNN
+	1    10200 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 1050 10050 1050
+Connection ~ 10050 1050
+Wire Wire Line
+	10050 1200 10050 1250
+Wire Wire Line
+	10050 1250 10200 1250
+Text GLabel 8600 2400 0    50   Input ~ 0
+E0_DIR
+Text GLabel 8600 2250 0    50   Input ~ 0
+E0_STEP
+Wire Wire Line
+	8600 2100 7850 2100
+Wire Wire Line
+	7850 2100 7850 2400
+Text GLabel 7050 2150 2    60   Output ~ 0
+MISO
+Text GLabel 7050 950  2    60   Input ~ 0
+MOSI
+Text GLabel 7050 1350 2    60   Input ~ 0
+SCK
+Text GLabel 7050 1750 2    60   Input ~ 0
+E0_SPICS
+Wire Wire Line
+	8000 1100 8150 1100
+Wire Wire Line
+	7750 1100 7750 1500
+Wire Wire Line
+	7750 1500 8600 1500
+Connection ~ 7750 1100
+Wire Wire Line
+	7750 1100 7800 1100
+$Comp
+L Ramps_EVO:Pololu U304
+U 1 1 5D8ACD72
+P 9250 3550
+F 0 "U304" H 9000 4200 60  0000 C CNN
+F 1 "E1" H 9350 2600 60  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 9250 3550 60  0001 C CNN
+F 3 "" H 9250 3550 60  0001 C CNN
+	1    9250 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 8200 3400 0    60   Input ~ 0
+E1_EN
+Wire Wire Line
+	8200 3400 8450 3400
+Wire Wire Line
+	8600 3400 8600 3350
+Wire Wire Line
+	10050 3050 10200 3050
+$Comp
+L Device:CP1_Small C304
+U 1 1 5D8C64D6
+P 10200 3150
+F 0 "C304" H 10291 3196 50  0000 L CNN
+F 1 "100u 35V" H 10291 3105 50  0000 L CNN
+F 2 "" H 10200 3150 50  0001 C CNN
+F 3 "" H 10200 3150 50  0001 C CNN
+	1    10200 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 4050 10050 4050
+Wire Wire Line
+	10050 3200 10050 3250
+Connection ~ 8600 2750
+Wire Wire Line
+	8600 2750 8450 2750
+Wire Wire Line
+	8600 2750 8600 3050
+Wire Wire Line
+	8600 3200 8150 3200
+Text GLabel 7050 2950 2    60   Input ~ 0
+MOSI
+Wire Wire Line
+	6800 3100 7750 3100
+Wire Wire Line
+	8150 3100 8150 3200
+Wire Wire Line
+	8000 3100 8150 3100
+Wire Wire Line
+	7750 3100 7750 3500
+Wire Wire Line
+	7750 3500 8600 3500
+Connection ~ 7750 3100
+Wire Wire Line
+	7750 3100 7800 3100
+Wire Wire Line
+	7750 4300 7750 3950
+Wire Wire Line
+	7750 3950 8600 3950
+Wire Wire Line
+	8600 4100 7850 4100
+Wire Wire Line
+	7850 4100 7850 4400
+$Comp
+L Ramps_EVO:Pololu U306
+U 1 1 5D964F28
+P 9250 5550
+F 0 "U306" H 9000 6200 60  0000 C CNN
+F 1 "E2" H 9350 4600 60  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 9250 5550 60  0001 C CNN
+F 3 "" H 9250 5550 60  0001 C CNN
+	1    9250 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 6100 8600 6100
+Text GLabel 7050 6150 2    60   Output ~ 0
+MISO
+Text GLabel 8200 5400 0    60   Input ~ 0
+E2_EN
+Wire Wire Line
+	8200 5400 8450 5400
+Wire Wire Line
+	8600 5400 8600 5350
+Wire Wire Line
+	10050 4750 10050 5050
+$Comp
+L Device:CP1_Small C306
+U 1 1 5DB28FB3
+P 10200 5150
+F 0 "C306" H 10291 5196 50  0000 L CNN
+F 1 "100u 35V" H 10291 5105 50  0000 L CNN
+F 2 "" H 10200 5150 50  0001 C CNN
+F 3 "" H 10200 5150 50  0001 C CNN
+	1    10200 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10050 5050 10200 5050
+Wire Wire Line
+	10050 5200 10050 5250
+Wire Wire Line
+	10050 5250 10200 5250
+Wire Wire Line
+	10150 6050 10050 6050
+Wire Wire Line
+	8150 5200 8150 5100
+Wire Wire Line
+	8150 5100 8000 5100
+Text GLabel 7050 5350 2    60   Input ~ 0
+SCK
+Text GLabel 7000 5750 2    60   Input ~ 0
+E2_SPICS
+Wire Wire Line
+	7750 5950 7750 6300
+Text GLabel 7050 4950 2    60   Input ~ 0
+MOSI
+Wire Wire Line
+	7750 5500 7750 5100
+Connection ~ 7750 5100
+Wire Wire Line
+	7750 5100 6800 5100
+Wire Wire Line
+	7800 5100 7750 5100
+Wire Wire Line
+	7650 5650 7650 5500
+Wire Wire Line
+	4850 1900 4900 1900
+Wire Wire Line
+	10050 1900 10100 1900
+Wire Wire Line
+	10050 3900 10100 3900
+Wire Wire Line
+	8600 5200 8150 5200
+Wire Wire Line
+	8600 5500 7750 5500
+Wire Wire Line
+	8600 5650 7650 5650
+Wire Wire Line
+	10050 5900 10100 5900
+Connection ~ 10050 5050
+Wire Wire Line
+	7750 5950 8600 5950
+Wire Wire Line
+	8600 4750 8600 5050
+Connection ~ 8600 4750
+Wire Wire Line
+	10050 2750 10050 3050
+Connection ~ 10050 3050
+Wire Wire Line
+	7650 1500 7650 1650
+Wire Wire Line
+	7650 1650 8600 1650
+Wire Wire Line
+	10200 3250 10050 3250
+Wire Wire Line
+	3400 5050 3400 4750
+Wire Wire Line
+	5000 5050 4850 5050
+Wire Wire Line
+	4850 5050 4850 4750
+Connection ~ 4850 5050
+Wire Wire Line
+	7750 2300 7750 1950
+Wire Wire Line
+	7750 1950 8600 1950
+Text GLabel 8600 4250 0    50   Input ~ 0
+E1_STEP
+Text GLabel 8600 4400 0    50   Input ~ 0
+E1_DIR
+Text GLabel 8600 6400 0    50   Input ~ 0
+E2_DIR
+Text GLabel 8600 6250 0    50   Input ~ 0
+E2_STEP
+$Comp
+L Device:R_Small R301
+U 1 1 5DCF41CA
+P 3250 950
+F 0 "R301" H 3300 900 50  0000 L CNN
+F 1 "10k" H 3300 1000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3250 950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/NG_DS_1773200_J-838467.pdf" H 3250 950 50  0001 C CNN
+F 4 "TE Connectivity" H 3250 950 50  0001 C CNN "Manufacturer"
+F 5 "CPF0603D10KE" H 3250 950 50  0001 C CNN "Product code"
+	1    3250 950 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 1200 3400 1200
+Wire Wire Line
+	3250 750  3250 850 
+Wire Wire Line
+	3250 1050 3250 1400
+Connection ~ 3250 1400
+Wire Wire Line
+	3250 1400 3400 1400
+Wire Wire Line
+	3250 2750 3250 2850
+Wire Wire Line
+	3250 3050 3250 3400
+Connection ~ 3250 3400
+Wire Wire Line
+	3250 3400 3000 3400
+Wire Wire Line
+	3250 4750 3250 4850
+Connection ~ 8450 5400
+Wire Wire Line
+	8450 5400 8600 5400
+Wire Wire Line
+	8450 4850 8450 4750
+Connection ~ 8450 4750
+Wire Wire Line
+	8450 4750 8600 4750
+Wire Wire Line
+	8450 2850 8450 2750
+Connection ~ 8450 2750
+Wire Wire Line
+	8450 3050 8450 3400
+Connection ~ 8450 3400
+Wire Wire Line
+	8450 3400 8600 3400
+Wire Wire Line
+	2950 5200 3400 5200
+Wire Wire Line
+	3250 5050 3250 5400
+Wire Wire Line
+	3000 5400 3250 5400
+Connection ~ 3250 5400
+Wire Wire Line
+	3250 5400 3400 5400
+Wire Wire Line
+	8450 750  8450 850 
+Connection ~ 8450 750 
+Wire Wire Line
+	8450 1050 8450 1400
+Connection ~ 8450 1400
+Wire Wire Line
+	8450 1400 8600 1400
+Wire Wire Line
+	10050 1750 10100 1750
+Wire Wire Line
+	10050 3750 10100 3750
+$Comp
+L power:GND #PWR0305
+U 1 1 5D860D93
+P 2950 1200
+F 0 "#PWR0305" H 2950 950 50  0001 C CNN
+F 1 "GND" H 3050 1100 50  0000 C CNN
+F 2 "" H 2950 1200 50  0001 C CNN
+F 3 "" H 2950 1200 50  0001 C CNN
+	1    2950 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 1200
+$Comp
+L Device:D_Schottky_Small_ALT D301
+U 1 1 5D73FF82
+P 4300 750
+F 0 "D301" H 4400 650 50  0000 R CNN
+F 1 "3A 100V" H 4400 850 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123FL" V 4300 750 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/SS36FA-D.PDF" V 4300 750 50  0001 C CNN
+F 4 "ON Semiconductor" H 4300 750 50  0001 C CNN "Manufacturer"
+F 5 "S310FA" H 4300 750 50  0001 C CNN "Product code"
+	1    4300 750 
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0313
+U 1 1 5D86500B
+P 2950 3200
+F 0 "#PWR0313" H 2950 2950 50  0001 C CNN
+F 1 "GND" H 3050 3100 50  0000 C CNN
+F 2 "" H 2950 3200 50  0001 C CNN
+F 3 "" H 2950 3200 50  0001 C CNN
+	1    2950 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 3200
+$Comp
+L power:GND #PWR0321
+U 1 1 5D86539B
+P 2950 5200
+F 0 "#PWR0321" H 2950 4950 50  0001 C CNN
+F 1 "GND" H 3050 5100 50  0000 C CNN
+F 2 "" H 2950 5200 50  0001 C CNN
+F 3 "" H 2950 5200 50  0001 C CNN
+	1    2950 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2950 5200
+$Comp
+L power:GND #PWR0306
+U 1 1 5D87DF85
+P 8150 1200
+F 0 "#PWR0306" H 8150 950 50  0001 C CNN
+F 1 "GND" H 8250 1100 50  0000 C CNN
+F 2 "" H 8150 1200 50  0001 C CNN
+F 3 "" H 8150 1200 50  0001 C CNN
+	1    8150 1200
+	1    0    0    -1  
+$EndComp
+Connection ~ 8150 1200
+$Comp
+L power:GND #PWR0314
+U 1 1 5D87EB38
+P 8150 3200
+F 0 "#PWR0314" H 8150 2950 50  0001 C CNN
+F 1 "GND" H 8250 3100 50  0000 C CNN
+F 2 "" H 8150 3200 50  0001 C CNN
+F 3 "" H 8150 3200 50  0001 C CNN
+	1    8150 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 8150 3200
+$Comp
+L power:GND #PWR0322
+U 1 1 5D87F5A2
+P 8150 5200
+F 0 "#PWR0322" H 8150 4950 50  0001 C CNN
+F 1 "GND" H 8250 5100 50  0000 C CNN
+F 2 "" H 8150 5200 50  0001 C CNN
+F 3 "" H 8150 5200 50  0001 C CNN
+	1    8150 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 8150 5200
+$Comp
+L Device:R_Small R303
+U 1 1 5D73F56F
+P 2700 1100
+F 0 "R303" V 2600 1050 50  0000 L CNN
+F 1 "100k" V 2800 1050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2700 1100 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf" H 2700 1100 50  0001 C CNN
+F 4 "Panasonic" V 2700 1100 50  0001 C CNN "Manufacturer"
+F 5 "ERA-3AED104V" V 2700 1100 50  0001 C CNN "Product code"
+F 6 "€0,108" V 2700 1100 50  0001 C CNN "Price"
+	1    2700 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1_Small C303
+U 1 1 5D790ED6
+P 5000 3150
+F 0 "C303" H 5091 3196 50  0000 L CNN
+F 1 "100u 35V" H 5091 3105 50  0000 L CNN
+F 2 "" H 5000 3150 50  0001 C CNN
+F 3 "" H 5000 3150 50  0001 C CNN
+	1    5000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C301
+U 1 1 5D73D66F
+P 5000 1150
+F 0 "C301" H 5091 1196 50  0000 L CNN
+F 1 "100u 35V" H 5091 1105 50  0000 L CNN
+F 2 "" H 5000 1150 50  0001 C CNN
+F 3 "" H 5000 1150 50  0001 C CNN
+	1    5000 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ramps_EVO:+VMOT #PWR0310
+U 1 1 5D7DDB96
+P 4850 2750
+F 0 "#PWR0310" H 4850 2600 50  0001 C CNN
+F 1 "+VMOT" H 4850 2923 50  0000 C CNN
+F 2 "" H 4850 2750 50  0001 C CNN
+F 3 "" H 4850 2750 50  0001 C CNN
+	1    4850 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 2750
+$Comp
+L Ramps_EVO:+VMOT #PWR0318
+U 1 1 5D7E0960
+P 4850 4750
+F 0 "#PWR0318" H 4850 4600 50  0001 C CNN
+F 1 "+VMOT" H 4850 4923 50  0000 C CNN
+F 2 "" H 4850 4750 50  0001 C CNN
+F 3 "" H 4850 4750 50  0001 C CNN
+	1    4850 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 4750
+$Comp
+L Ramps_EVO:+VMOT #PWR0320
+U 1 1 5D7E4A41
+P 10050 4750
+F 0 "#PWR0320" H 10050 4600 50  0001 C CNN
+F 1 "+VMOT" H 10050 4923 50  0000 C CNN
+F 2 "" H 10050 4750 50  0001 C CNN
+F 3 "" H 10050 4750 50  0001 C CNN
+	1    10050 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 4750
+$Comp
+L Ramps_EVO:+VMOT #PWR0312
+U 1 1 5D7E7BDC
+P 10050 2750
+F 0 "#PWR0312" H 10050 2600 50  0001 C CNN
+F 1 "+VMOT" H 10050 2923 50  0000 C CNN
+F 2 "" H 10050 2750 50  0001 C CNN
+F 3 "" H 10050 2750 50  0001 C CNN
+	1    10050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Ramps_EVO:+VMOT #PWR0304
+U 1 1 5D7E920F
+P 10050 750
+F 0 "#PWR0304" H 10050 600 50  0001 C CNN
+F 1 "+VMOT" H 10050 923 50  0000 C CNN
+F 2 "" H 10050 750 50  0001 C CNN
+F 3 "" H 10050 750 50  0001 C CNN
+	1    10050 750 
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 750 
+$Comp
+L power:GND #PWR0315
+U 1 1 5D7EF2C3
+P 4850 3250
+F 0 "#PWR0315" H 4850 3000 50  0001 C CNN
+F 1 "GND" H 4950 3150 50  0000 C CNN
+F 2 "" H 4850 3250 50  0001 C CNN
+F 3 "" H 4850 3250 50  0001 C CNN
+	1    4850 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 3250
+$Comp
+L power:GND #PWR0323
+U 1 1 5D7EF6C2
+P 4850 5250
+F 0 "#PWR0323" H 4850 5000 50  0001 C CNN
+F 1 "GND" H 4950 5150 50  0000 C CNN
+F 2 "" H 4850 5250 50  0001 C CNN
+F 3 "" H 4850 5250 50  0001 C CNN
+	1    4850 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 5250
+$Comp
+L power:GND #PWR0324
+U 1 1 5D7EFCFC
+P 10050 5250
+F 0 "#PWR0324" H 10050 5000 50  0001 C CNN
+F 1 "GND" H 10150 5150 50  0000 C CNN
+F 2 "" H 10050 5250 50  0001 C CNN
+F 3 "" H 10050 5250 50  0001 C CNN
+	1    10050 5250
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 5250
+$Comp
+L power:GND #PWR0316
+U 1 1 5D806560
+P 10050 3250
+F 0 "#PWR0316" H 10050 3000 50  0001 C CNN
+F 1 "GND" H 10150 3150 50  0000 C CNN
+F 2 "" H 10050 3250 50  0001 C CNN
+F 3 "" H 10050 3250 50  0001 C CNN
+	1    10050 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 3250
+$Comp
+L power:GND #PWR0308
+U 1 1 5D8068A8
+P 10050 1250
+F 0 "#PWR0308" H 10050 1000 50  0001 C CNN
+F 1 "GND" H 10150 1150 50  0000 C CNN
+F 2 "" H 10050 1250 50  0001 C CNN
+F 3 "" H 10050 1250 50  0001 C CNN
+	1    10050 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 1250
+Connection ~ 4850 1250
+Wire Wire Line
+	4850 1250 5000 1250
+Wire Wire Line
+	4850 1200 4850 1250
+$Comp
+L power:GND #PWR0307
+U 1 1 5D7EEC29
+P 4850 1250
+F 0 "#PWR0307" H 4850 1000 50  0001 C CNN
+F 1 "GND" H 4950 1150 50  0000 C CNN
+F 2 "" H 4850 1250 50  0001 C CNN
+F 3 "" H 4850 1250 50  0001 C CNN
+	1    4850 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 750  4850 750 
+Connection ~ 4850 750 
+Wire Wire Line
+	4850 1050 4850 750 
+Connection ~ 4850 1050
+$Comp
+L Ramps_EVO:+VMOT #PWR0302
+U 1 1 5D7DD6DA
+P 4850 750
+F 0 "#PWR0302" H 4850 600 50  0001 C CNN
+F 1 "+VMOT" H 4850 923 50  0000 C CNN
+F 2 "" H 4850 750 50  0001 C CNN
+F 3 "" H 4850 750 50  0001 C CNN
+	1    4850 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 2950 6550 2950
+Wire Wire Line
+	6100 2750 6100 2950
+Wire Wire Line
+	6100 2750 8450 2750
+Wire Wire Line
+	6100 4750 6100 4950
+Wire Wire Line
+	6100 4950 6550 4950
+Wire Wire Line
+	6100 4750 8450 4750
+Wire Wire Line
+	6100 5350 6550 5350
+Wire Wire Line
+	6100 5750 6500 5750
+Wire Wire Line
+	6100 6400 6100 6150
+Wire Wire Line
+	6100 6400 7850 6400
+$Comp
+L power:PWR_FLAG #FLG0318
+U 1 1 5DA0B1FB
+P 6700 6300
+F 0 "#FLG0318" H 6700 6375 50  0001 C CNN
+F 1 "PWR_FLAG" V 6700 6450 50  0000 L CNN
+F 2 "" H 6700 6300 50  0001 C CNN
+F 3 "~" H 6700 6300 50  0001 C CNN
+	1    6700 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0316
+U 1 1 5DA0B720
+P 6650 5900
+F 0 "#FLG0316" H 6650 5975 50  0001 C CNN
+F 1 "PWR_FLAG" V 6650 6050 50  0000 L CNN
+F 2 "" H 6650 5900 50  0001 C CNN
+F 3 "~" H 6650 5900 50  0001 C CNN
+	1    6650 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0314
+U 1 1 5DA0B910
+P 6700 5500
+F 0 "#FLG0314" H 6700 5575 50  0001 C CNN
+F 1 "PWR_FLAG" V 6700 5650 50  0000 L CNN
+F 2 "" H 6700 5500 50  0001 C CNN
+F 3 "~" H 6700 5500 50  0001 C CNN
+	1    6700 5500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7850 6100 7850 6400
+Wire Wire Line
+	6100 4950 6100 5350
+Connection ~ 6100 4950
+Wire Wire Line
+	6100 5350 6100 5750
+Connection ~ 6100 5350
+Wire Wire Line
+	7650 5800 8600 5800
+Wire Wire Line
+	7650 5800 7650 5900
+Wire Wire Line
+	6100 4400 7850 4400
+Wire Wire Line
+	6100 4150 6550 4150
+Wire Wire Line
+	6100 4400 6100 4150
+Wire Wire Line
+	6100 3350 6100 2950
+Wire Wire Line
+	6100 3350 6550 3350
+Wire Wire Line
+	6100 3750 6100 3350
+Wire Wire Line
+	6550 3750 6100 3750
+$Comp
+L power:PWR_FLAG #FLG0312
+U 1 1 5D8FAED3
+P 6700 4300
+F 0 "#FLG0312" H 6700 4375 50  0001 C CNN
+F 1 "PWR_FLAG" V 6700 4450 50  0000 L CNN
+F 2 "" H 6700 4300 50  0001 C CNN
+F 3 "~" H 6700 4300 50  0001 C CNN
+	1    6700 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0310
+U 1 1 5D8FAB60
+P 6700 3900
+F 0 "#FLG0310" H 6700 3975 50  0001 C CNN
+F 1 "PWR_FLAG" V 6700 4050 50  0000 L CNN
+F 2 "" H 6700 3900 50  0001 C CNN
+F 3 "~" H 6700 3900 50  0001 C CNN
+	1    6700 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0308
+U 1 1 5D8940C0
+P 6700 3500
+F 0 "#FLG0308" H 6700 3575 50  0001 C CNN
+F 1 "PWR_FLAG" V 6700 3650 50  0000 L CNN
+F 2 "" H 6700 3500 50  0001 C CNN
+F 3 "~" H 6700 3500 50  0001 C CNN
+	1    6700 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 3650 8600 3650
+Wire Wire Line
+	7650 3500 7650 3650
+Text GLabel 7050 3750 2    60   Input ~ 0
+E1_SPICS
+Text GLabel 7050 4150 2    60   Output ~ 0
+MISO
+Text GLabel 7050 3350 2    60   Input ~ 0
+SCK
+Wire Wire Line
+	7650 3900 7650 3800
+Wire Wire Line
+	7650 3800 8600 3800
+Connection ~ 6100 3350
+Connection ~ 6100 2950
+Wire Wire Line
+	6100 2400 6100 2150
+Wire Wire Line
+	6100 2150 6550 2150
+Wire Wire Line
+	6100 2400 7850 2400
+Wire Wire Line
+	6100 750  6100 950 
+Wire Wire Line
+	6100 1750 6550 1750
+Wire Wire Line
+	6100 750  8450 750 
+Wire Wire Line
+	6550 1350 6100 1350
+Wire Wire Line
+	6100 1350 6100 1750
+Connection ~ 6100 1350
+Wire Wire Line
+	6100 950  6100 1350
+Connection ~ 6100 950 
+Wire Wire Line
+	7650 1900 7650 1800
+Wire Wire Line
+	7650 1800 8600 1800
+$Comp
+L power:PWR_FLAG #FLG0306
+U 1 1 5DEBCECD
+P 6700 2300
+F 0 "#FLG0306" H 6700 2375 50  0001 C CNN
+F 1 "PWR_FLAG" V 6700 2450 50  0000 L CNN
+F 2 "" H 6700 2300 50  0001 C CNN
+F 3 "~" H 6700 2300 50  0001 C CNN
+	1    6700 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0304
+U 1 1 5DEBD5A0
+P 6700 1900
+F 0 "#FLG0304" H 6700 1975 50  0001 C CNN
+F 1 "PWR_FLAG" V 6700 2050 50  0000 L CNN
+F 2 "" H 6700 1900 50  0001 C CNN
+F 3 "~" H 6700 1900 50  0001 C CNN
+	1    6700 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0302
+U 1 1 5DEBD910
+P 6700 1500
+F 0 "#FLG0302" H 6700 1575 50  0001 C CNN
+F 1 "PWR_FLAG" V 6700 1650 50  0000 L CNN
+F 2 "" H 6700 1500 50  0001 C CNN
+F 3 "~" H 6700 1500 50  0001 C CNN
+	1    6700 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0317
+U 1 1 5DFD2703
+P 1500 6300
+F 0 "#FLG0317" H 1500 6375 50  0001 C CNN
+F 1 "PWR_FLAG" V 1500 6450 50  0000 L CNN
+F 2 "" H 1500 6300 50  0001 C CNN
+F 3 "~" H 1500 6300 50  0001 C CNN
+	1    1500 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	900  6400 2650 6400
+Wire Wire Line
+	900  6150 1350 6150
+Wire Wire Line
+	900  6150 900  6400
+Wire Wire Line
+	900  4750 900  4950
+Wire Wire Line
+	900  5750 1350 5750
+Wire Wire Line
+	900  4750 3250 4750
+Wire Wire Line
+	1350 5350 900  5350
+Wire Wire Line
+	1350 4950 900  4950
+$Comp
+L power:PWR_FLAG #FLG0315
+U 1 1 5E07C4FD
+P 1500 5900
+F 0 "#FLG0315" H 1500 5975 50  0001 C CNN
+F 1 "PWR_FLAG" V 1500 6050 50  0000 L CNN
+F 2 "" H 1500 5900 50  0001 C CNN
+F 3 "~" H 1500 5900 50  0001 C CNN
+	1    1500 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0313
+U 1 1 5E07C894
+P 1500 5500
+F 0 "#FLG0313" H 1500 5575 50  0001 C CNN
+F 1 "PWR_FLAG" V 1500 5650 50  0000 L CNN
+F 2 "" H 1500 5500 50  0001 C CNN
+F 3 "~" H 1500 5500 50  0001 C CNN
+	1    1500 5500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2550 5950 2550 6300
+Wire Wire Line
+	2650 6100 2650 6400
+Wire Wire Line
+	2450 5900 2450 5800
+Wire Wire Line
+	2450 5800 3400 5800
+Wire Wire Line
+	900  5350 900  5750
+Connection ~ 900  5350
+Wire Wire Line
+	900  4950 900  5350
+Connection ~ 900  4950
+Wire Wire Line
+	1350 4150 900  4150
+Wire Wire Line
+	900  4150 900  4400
+Wire Wire Line
+	900  4400 2650 4400
+Wire Wire Line
+	1350 3750 900  3750
+Wire Wire Line
+	900  3750 900  3350
+Wire Wire Line
+	900  2750 3250 2750
+Wire Wire Line
+	1350 2950 900  2950
+Wire Wire Line
+	900  2950 900  2750
+Wire Wire Line
+	1350 3350 900  3350
+Wire Wire Line
+	900  3350 900  2950
+Wire Wire Line
+	900  2400 900  2150
+Wire Wire Line
+	900  2400 2650 2400
+Wire Wire Line
+	900  750  900  950 
+Wire Wire Line
+	900  1750 1350 1750
+Wire Wire Line
+	900  750  3250 750 
+Wire Wire Line
+	1350 1350 900  1350
+Wire Wire Line
+	900  1350 900  1750
+Wire Wire Line
+	1350 950  900  950 
+Wire Wire Line
+	900  950  900  1350
+Wire Wire Line
+	2450 3900 2450 3800
+Wire Wire Line
+	2450 3800 3400 3800
+Connection ~ 900  3350
+Connection ~ 900  2950
+$Comp
+L power:PWR_FLAG #FLG0311
+U 1 1 5E468D51
+P 1500 4300
+F 0 "#FLG0311" H 1500 4375 50  0001 C CNN
+F 1 "PWR_FLAG" V 1500 4450 50  0000 L CNN
+F 2 "" H 1500 4300 50  0001 C CNN
+F 3 "~" H 1500 4300 50  0001 C CNN
+	1    1500 4300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0309
+U 1 1 5E4690AB
+P 1500 3900
+F 0 "#FLG0309" H 1500 3975 50  0001 C CNN
+F 1 "PWR_FLAG" V 1500 4050 50  0000 L CNN
+F 2 "" H 1500 3900 50  0001 C CNN
+F 3 "~" H 1500 3900 50  0001 C CNN
+	1    1500 3900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0307
+U 1 1 5E469489
+P 1500 3500
+F 0 "#FLG0307" H 1500 3575 50  0001 C CNN
+F 1 "PWR_FLAG" V 1500 3650 50  0000 L CNN
+F 2 "" H 1500 3500 50  0001 C CNN
+F 3 "~" H 1500 3500 50  0001 C CNN
+	1    1500 3500
+	0    -1   -1   0   
+$EndComp
+Connection ~ 900  1350
+Connection ~ 900  950 
+Wire Wire Line
+	2450 1900 2450 1800
+Wire Wire Line
+	2450 1800 3400 1800
+$Comp
+L power:PWR_FLAG #FLG0305
+U 1 1 5E67A7D0
+P 1500 2300
+F 0 "#FLG0305" H 1500 2375 50  0001 C CNN
+F 1 "PWR_FLAG" V 1500 2450 50  0000 L CNN
+F 2 "" H 1500 2300 50  0001 C CNN
+F 3 "~" H 1500 2300 50  0001 C CNN
+	1    1500 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0303
+U 1 1 5E67ACDE
+P 1500 1900
+F 0 "#FLG0303" H 1500 1975 50  0001 C CNN
+F 1 "PWR_FLAG" V 1500 2050 50  0000 L CNN
+F 2 "" H 1500 1900 50  0001 C CNN
+F 3 "~" H 1500 1900 50  0001 C CNN
+	1    1500 1900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0301
+U 1 1 5E67B170
+P 1500 1500
+F 0 "#FLG0301" H 1500 1575 50  0001 C CNN
+F 1 "PWR_FLAG" V 1500 1650 50  0000 L CNN
+F 2 "" H 1500 1500 50  0001 C CNN
+F 3 "~" H 1500 1500 50  0001 C CNN
+	1    1500 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0301
+U 1 1 5D85ED51
+P 3400 750
+F 0 "#PWR0301" H 3400 600 50  0001 C CNN
+F 1 "+3V3" H 3415 923 50  0000 C CNN
+F 2 "" H 3400 750 50  0001 C CNN
+F 3 "" H 3400 750 50  0001 C CNN
+	1    3400 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0309
+U 1 1 5D85FE95
+P 3400 2750
+F 0 "#PWR0309" H 3400 2600 50  0001 C CNN
+F 1 "+3V3" H 3415 2923 50  0000 C CNN
+F 2 "" H 3400 2750 50  0001 C CNN
+F 3 "" H 3400 2750 50  0001 C CNN
+	1    3400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0317
+U 1 1 5D863C63
+P 3400 4750
+F 0 "#PWR0317" H 3400 4600 50  0001 C CNN
+F 1 "+3V3" H 3415 4923 50  0000 C CNN
+F 2 "" H 3400 4750 50  0001 C CNN
+F 3 "" H 3400 4750 50  0001 C CNN
+	1    3400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0319
+U 1 1 5D86892B
+P 8600 4750
+F 0 "#PWR0319" H 8600 4600 50  0001 C CNN
+F 1 "+3V3" H 8615 4923 50  0000 C CNN
+F 2 "" H 8600 4750 50  0001 C CNN
+F 3 "" H 8600 4750 50  0001 C CNN
+	1    8600 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0311
+U 1 1 5D86D6E6
+P 8600 2750
+F 0 "#PWR0311" H 8600 2600 50  0001 C CNN
+F 1 "+3V3" H 8615 2923 50  0000 C CNN
+F 2 "" H 8600 2750 50  0001 C CNN
+F 3 "" H 8600 2750 50  0001 C CNN
+	1    8600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0303
+U 1 1 5D87209A
+P 8600 750
+F 0 "#PWR0303" H 8600 600 50  0001 C CNN
+F 1 "+3V3" H 8615 923 50  0000 C CNN
+F 2 "" H 8600 750 50  0001 C CNN
+F 3 "" H 8600 750 50  0001 C CNN
+	1    8600 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open J301
+U 1 1 5D88E8D2
+P 1600 950
+F 0 "J301" H 1500 1050 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 1037 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 950 50  0001 C CNN
+F 4 "Molex" H 1600 950 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 950 50  0001 C CNN "Product code"
+	1    1600 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  2150 1350 2150
+Wire Wire Line
+	6100 6150 6550 6150
+$Comp
+L Connector_Generic:Conn_01x04 J308
+U 1 1 5D89E045
+P 10400 1800
+F 0 "J308" H 10500 1500 50  0000 R CNN
+F 1 "E0" H 10450 2000 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 10400 1400 50  0001 C CNN
+F 3 "https://www.molex.com/webdocs/datasheets/pdf/en-us/0022272041_PCB_HEADERS.pdf" H 11850 1800 60  0001 C CNN
+F 4 "Molex" H 10400 1800 50  0001 C CNN "Manufacturer"
+F 5 "22272041" H 10400 1800 50  0001 C CNN "Product code"
+	1    10400 1800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8450 5050 8450 5400
+Wire Wire Line
+	6550 950  6100 950 
+$Comp
+L Device:R_Small R305
+U 1 1 5D8BF1C8
+P 3250 2950
+F 0 "R305" H 3300 2900 50  0000 L CNN
+F 1 "10k" H 3300 3000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3250 2950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/NG_DS_1773200_J-838467.pdf" H 3250 2950 50  0001 C CNN
+F 4 "TE Connectivity" H 3250 2950 50  0001 C CNN "Manufacturer"
+F 5 "CPF0603D10KE" H 3250 2950 50  0001 C CNN "Product code"
+	1    3250 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R309
+U 1 1 5D8BF6B8
+P 3250 4950
+F 0 "R309" H 3300 4900 50  0000 L CNN
+F 1 "10k" H 3300 5000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3250 4950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/NG_DS_1773200_J-838467.pdf" H 3250 4950 50  0001 C CNN
+F 4 "TE Connectivity" H 3250 4950 50  0001 C CNN "Manufacturer"
+F 5 "CPF0603D10KE" H 3250 4950 50  0001 C CNN "Product code"
+	1    3250 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R310
+U 1 1 5D8BF9F0
+P 8450 4950
+F 0 "R310" H 8500 4900 50  0000 L CNN
+F 1 "10k" H 8500 5000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8450 4950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/NG_DS_1773200_J-838467.pdf" H 8450 4950 50  0001 C CNN
+F 4 "TE Connectivity" H 8450 4950 50  0001 C CNN "Manufacturer"
+F 5 "CPF0603D10KE" H 8450 4950 50  0001 C CNN "Product code"
+	1    8450 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R306
+U 1 1 5D8BFC6C
+P 8450 2950
+F 0 "R306" H 8500 2900 50  0000 L CNN
+F 1 "10k" H 8500 3000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8450 2950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/NG_DS_1773200_J-838467.pdf" H 8450 2950 50  0001 C CNN
+F 4 "TE Connectivity" H 8450 2950 50  0001 C CNN "Manufacturer"
+F 5 "CPF0603D10KE" H 8450 2950 50  0001 C CNN "Product code"
+	1    8450 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R302
+U 1 1 5D8C01ED
+P 8450 950
+F 0 "R302" H 8500 900 50  0000 L CNN
+F 1 "10k" H 8500 1000 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8450 950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/418/NG_DS_1773200_J-838467.pdf" H 8450 950 50  0001 C CNN
+F 4 "TE Connectivity" H 8450 950 50  0001 C CNN "Manufacturer"
+F 5 "CPF0603D10KE" H 8450 950 50  0001 C CNN "Product code"
+	1    8450 950 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R307
+U 1 1 5D8C16C3
+P 2700 3100
+F 0 "R307" V 2600 3050 50  0000 L CNN
+F 1 "100k" V 2800 3050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2700 3100 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf" H 2700 3100 50  0001 C CNN
+F 4 "Panasonic" V 2700 3100 50  0001 C CNN "Manufacturer"
+F 5 "ERA-3AED104V" V 2700 3100 50  0001 C CNN "Product code"
+F 6 "€0,108" V 2700 3100 50  0001 C CNN "Price"
+	1    2700 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R311
+U 1 1 5D8C1B24
+P 2700 5100
+F 0 "R311" V 2600 5050 50  0000 L CNN
+F 1 "100k" V 2800 5050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2700 5100 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf" H 2700 5100 50  0001 C CNN
+F 4 "Panasonic" V 2700 5100 50  0001 C CNN "Manufacturer"
+F 5 "ERA-3AED104V" V 2700 5100 50  0001 C CNN "Product code"
+F 6 "€0,108" V 2700 5100 50  0001 C CNN "Price"
+	1    2700 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R312
+U 1 1 5D8C1F25
+P 7900 5100
+F 0 "R312" V 7800 5050 50  0000 L CNN
+F 1 "100k" V 8000 5050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7900 5100 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf" H 7900 5100 50  0001 C CNN
+F 4 "Panasonic" V 7900 5100 50  0001 C CNN "Manufacturer"
+F 5 "ERA-3AED104V" V 7900 5100 50  0001 C CNN "Product code"
+F 6 "€0,108" V 7900 5100 50  0001 C CNN "Price"
+	1    7900 5100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R308
+U 1 1 5D8C2556
+P 7900 3100
+F 0 "R308" V 7800 3050 50  0000 L CNN
+F 1 "100k" V 8000 3050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7900 3100 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf" H 7900 3100 50  0001 C CNN
+F 4 "Panasonic" V 7900 3100 50  0001 C CNN "Manufacturer"
+F 5 "ERA-3AED104V" V 7900 3100 50  0001 C CNN "Product code"
+F 6 "€0,108" V 7900 3100 50  0001 C CNN "Price"
+	1    7900 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R304
+U 1 1 5D8C2977
+P 7900 1100
+F 0 "R304" V 7800 1050 50  0000 L CNN
+F 1 "100k" V 8000 1050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7900 1100 50  0001 C CNN
+F 3 "https://eu.mouser.com/datasheet/2/315/AOA0000C307-1149632.pdf" H 7900 1100 50  0001 C CNN
+F 4 "Panasonic" V 7900 1100 50  0001 C CNN "Manufacturer"
+F 5 "ERA-3AED104V" V 7900 1100 50  0001 C CNN "Product code"
+F 6 "€0,108" V 7900 1100 50  0001 C CNN "Price"
+	1    7900 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_Schottky_Small_ALT D303
+U 1 1 5D8C3AB1
+P 4300 2750
+F 0 "D303" H 4400 2650 50  0000 R CNN
+F 1 "3A 100V" H 4400 2850 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123FL" V 4300 2750 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/SS36FA-D.PDF" V 4300 2750 50  0001 C CNN
+F 4 "ON Semiconductor" H 4300 2750 50  0001 C CNN "Manufacturer"
+F 5 "S310FA" H 4300 2750 50  0001 C CNN "Product code"
+	1    4300 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky_Small_ALT D305
+U 1 1 5D8C4021
+P 4300 4750
+F 0 "D305" H 4400 4650 50  0000 R CNN
+F 1 "3A 100V" H 4400 4850 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123FL" V 4300 4750 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/SS36FA-D.PDF" V 4300 4750 50  0001 C CNN
+F 4 "ON Semiconductor" H 4300 4750 50  0001 C CNN "Manufacturer"
+F 5 "S310FA" H 4300 4750 50  0001 C CNN "Product code"
+	1    4300 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky_Small_ALT D306
+U 1 1 5D8C4509
+P 9450 4750
+F 0 "D306" H 9550 4650 50  0000 R CNN
+F 1 "3A 100V" H 9550 4850 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123FL" V 9450 4750 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/SS36FA-D.PDF" V 9450 4750 50  0001 C CNN
+F 4 "ON Semiconductor" H 9450 4750 50  0001 C CNN "Manufacturer"
+F 5 "S310FA" H 9450 4750 50  0001 C CNN "Product code"
+	1    9450 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky_Small_ALT D304
+U 1 1 5D8C4AF6
+P 9500 2750
+F 0 "D304" H 9600 2650 50  0000 R CNN
+F 1 "3A 100V" H 9600 2850 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123FL" V 9500 2750 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/SS36FA-D.PDF" V 9500 2750 50  0001 C CNN
+F 4 "ON Semiconductor" H 9500 2750 50  0001 C CNN "Manufacturer"
+F 5 "S310FA" H 9500 2750 50  0001 C CNN "Product code"
+	1    9500 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D_Schottky_Small_ALT D302
+U 1 1 5D8C4F79
+P 9500 750
+F 0 "D302" H 9600 650 50  0000 R CNN
+F 1 "3A 100V" H 9600 850 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123FL" V 9500 750 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/SS36FA-D.PDF" V 9500 750 50  0001 C CNN
+F 4 "ON Semiconductor" H 9500 750 50  0001 C CNN "Manufacturer"
+F 5 "S310FA" H 9500 750 50  0001 C CNN "Product code"
+	1    9500 750 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 1500 1600 1500
+Wire Wire Line
+	1500 1900 1600 1900
+Wire Wire Line
+	1500 2300 1600 2300
+Wire Wire Line
+	6700 1500 6800 1500
+Wire Wire Line
+	6700 1900 6800 1900
+Wire Wire Line
+	6700 2300 6800 2300
+Wire Wire Line
+	6700 4300 6800 4300
+Wire Wire Line
+	6700 3900 6800 3900
+Wire Wire Line
+	6700 3500 6800 3500
+Wire Wire Line
+	1500 4300 1600 4300
+Wire Wire Line
+	1500 3900 1600 3900
+Wire Wire Line
+	1500 3500 1600 3500
+Wire Wire Line
+	1500 6300 1600 6300
+Wire Wire Line
+	1500 5900 1600 5900
+Wire Wire Line
+	1500 5500 1600 5500
+Wire Wire Line
+	6700 6300 6800 6300
+Wire Wire Line
+	6650 5900 6750 5900
+Wire Wire Line
+	6700 5500 6800 5500
+$Comp
+L Jumper:Jumper_3_Open J303
+U 1 1 5D890115
+P 1600 1350
+F 0 "J303" H 1500 1450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 1437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 1350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 1350 50  0001 C CNN
+F 4 "Molex" H 1600 1350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 1350 50  0001 C CNN "Product code"
+	1    1600 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 1500
+Wire Wire Line
+	1600 1500 2450 1500
+$Comp
+L Jumper:Jumper_3_Open J305
+U 1 1 5D8905F1
+P 1600 1750
+F 0 "J305" H 1500 1850 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 1837 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 1750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 1750 50  0001 C CNN
+F 4 "Molex" H 1600 1750 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 1750 50  0001 C CNN "Product code"
+	1    1600 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 1900
+Wire Wire Line
+	1600 1900 2450 1900
+$Comp
+L Jumper:Jumper_3_Open J309
+U 1 1 5D890B7B
+P 1600 2150
+F 0 "J309" H 1500 2250 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 2237 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 2150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 2150 50  0001 C CNN
+F 4 "Molex" H 1600 2150 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 2150 50  0001 C CNN "Product code"
+	1    1600 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 2300
+Wire Wire Line
+	1600 2300 2550 2300
+$Comp
+L Jumper:Jumper_3_Open J313
+U 1 1 5D89106E
+P 1600 2950
+F 0 "J313" H 1500 3050 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 3037 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 2950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 2950 50  0001 C CNN
+F 4 "Molex" H 1600 2950 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 2950 50  0001 C CNN "Product code"
+	1    1600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open J315
+U 1 1 5D8917C1
+P 1600 3350
+F 0 "J315" H 1500 3450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 3437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 3350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 3350 50  0001 C CNN
+F 4 "Molex" H 1600 3350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 3350 50  0001 C CNN "Product code"
+	1    1600 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 3500
+Wire Wire Line
+	1600 3500 2450 3500
+$Comp
+L Jumper:Jumper_3_Open J317
+U 1 1 5D891B9F
+P 1600 3750
+F 0 "J317" H 1500 3850 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 3837 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 3750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 3750 50  0001 C CNN
+F 4 "Molex" H 1600 3750 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 3750 50  0001 C CNN "Product code"
+	1    1600 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 3900
+Wire Wire Line
+	1600 3900 2450 3900
+$Comp
+L Jumper:Jumper_3_Open J321
+U 1 1 5D891E57
+P 1600 4150
+F 0 "J321" H 1500 4250 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 4237 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 4150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 4150 50  0001 C CNN
+F 4 "Molex" H 1600 4150 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 4150 50  0001 C CNN "Product code"
+	1    1600 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 4300
+Wire Wire Line
+	1600 4300 2550 4300
+$Comp
+L Jumper:Jumper_3_Open J325
+U 1 1 5D89232D
+P 1600 4950
+F 0 "J325" H 1500 5050 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 5037 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 4950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 4950 50  0001 C CNN
+F 4 "Molex" H 1600 4950 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 4950 50  0001 C CNN "Product code"
+	1    1600 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open J327
+U 1 1 5D8926D0
+P 1600 5350
+F 0 "J327" H 1500 5450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 5437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 5350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 5350 50  0001 C CNN
+F 4 "Molex" H 1600 5350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 5350 50  0001 C CNN "Product code"
+	1    1600 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 5500
+Wire Wire Line
+	1600 5500 2450 5500
+$Comp
+L Jumper:Jumper_3_Open J329
+U 1 1 5D892A75
+P 1600 5750
+F 0 "J329" H 1500 5850 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 5837 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 5750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 5750 50  0001 C CNN
+F 4 "Molex" H 1600 5750 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 5750 50  0001 C CNN "Product code"
+	1    1600 5750
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 5900
+Wire Wire Line
+	1600 5900 2450 5900
+$Comp
+L Jumper:Jumper_3_Open J333
+U 1 1 5D892E10
+P 1600 6150
+F 0 "J333" H 1500 6250 50  0000 L CNN
+F 1 "Jumper_3_Open" V 1555 6237 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1600 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 1600 6150 50  0001 C CNN
+F 4 "Molex" H 1600 6150 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 1600 6150 50  0001 C CNN "Product code"
+	1    1600 6150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 6300
+Wire Wire Line
+	1600 6300 2550 6300
+$Comp
+L Jumper:Jumper_3_Open J334
+U 1 1 5D893293
+P 6800 6150
+F 0 "J334" H 6700 6250 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6755 6237 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 6150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6800 6150 50  0001 C CNN
+F 4 "Molex" H 6800 6150 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6800 6150 50  0001 C CNN "Product code"
+	1    6800 6150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 6300
+Wire Wire Line
+	6800 6300 7750 6300
+$Comp
+L Jumper:Jumper_3_Open J330
+U 1 1 5D893BEE
+P 6750 5750
+F 0 "J330" H 6650 5850 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6705 5837 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6750 5750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6750 5750 50  0001 C CNN
+F 4 "Molex" H 6750 5750 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6750 5750 50  0001 C CNN "Product code"
+	1    6750 5750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6750 5900
+Wire Wire Line
+	6750 5900 7650 5900
+$Comp
+L Jumper:Jumper_3_Open J328
+U 1 1 5D893FD3
+P 6800 5350
+F 0 "J328" H 6700 5450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6755 5437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 5350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6800 5350 50  0001 C CNN
+F 4 "Molex" H 6800 5350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6800 5350 50  0001 C CNN "Product code"
+	1    6800 5350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 5500
+Wire Wire Line
+	6800 5500 7650 5500
+$Comp
+L Jumper:Jumper_3_Open J326
+U 1 1 5D894318
+P 6800 4950
+F 0 "J326" H 6700 5050 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6755 5037 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 4950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6800 4950 50  0001 C CNN
+F 4 "Molex" H 6800 4950 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6800 4950 50  0001 C CNN "Product code"
+	1    6800 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open J322
+U 1 1 5D89473E
+P 6800 4150
+F 0 "J322" H 6700 4250 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6755 4237 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 4150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6800 4150 50  0001 C CNN
+F 4 "Molex" H 6800 4150 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6800 4150 50  0001 C CNN "Product code"
+	1    6800 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 4300
+Wire Wire Line
+	6800 4300 7750 4300
+$Comp
+L Jumper:Jumper_3_Open J318
+U 1 1 5D894CAF
+P 6800 3750
+F 0 "J318" H 6700 3850 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6755 3837 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 3750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6800 3750 50  0001 C CNN
+F 4 "Molex" H 6800 3750 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6800 3750 50  0001 C CNN "Product code"
+	1    6800 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 3900
+Wire Wire Line
+	6800 3900 7650 3900
+$Comp
+L Jumper:Jumper_3_Open J316
+U 1 1 5D8950B0
+P 6800 3350
+F 0 "J316" H 6700 3450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6755 3437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 3350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6800 3350 50  0001 C CNN
+F 4 "Molex" H 6800 3350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6800 3350 50  0001 C CNN "Product code"
+	1    6800 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 3500
+Wire Wire Line
+	6800 3500 7650 3500
+$Comp
+L Jumper:Jumper_3_Open J314
+U 1 1 5D895464
+P 6800 2950
+F 0 "J314" H 6700 3050 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6755 3037 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 2950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6800 2950 50  0001 C CNN
+F 4 "Molex" H 6800 2950 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6800 2950 50  0001 C CNN "Product code"
+	1    6800 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open J310
+U 1 1 5D8958C3
+P 6800 2150
+F 0 "J310" H 6700 2250 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6755 2237 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 2150 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6800 2150 50  0001 C CNN
+F 4 "Molex" H 6800 2150 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6800 2150 50  0001 C CNN "Product code"
+	1    6800 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 2300
+Wire Wire Line
+	6800 2300 7750 2300
+$Comp
+L Jumper:Jumper_3_Open J306
+U 1 1 5D89611C
+P 6800 1750
+F 0 "J306" H 6700 1850 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6755 1837 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 1750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6800 1750 50  0001 C CNN
+F 4 "Molex" H 6800 1750 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6800 1750 50  0001 C CNN "Product code"
+	1    6800 1750
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 1900
+Wire Wire Line
+	6800 1900 7650 1900
+$Comp
+L Jumper:Jumper_3_Open J304
+U 1 1 5D89640C
+P 6800 1350
+F 0 "J304" H 6700 1450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6755 1437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 1350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6800 1350 50  0001 C CNN
+F 4 "Molex" H 6800 1350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6800 1350 50  0001 C CNN "Product code"
+	1    6800 1350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 1500
+Wire Wire Line
+	6800 1500 7650 1500
+$Comp
+L Jumper:Jumper_3_Open J302
+U 1 1 5D896834
+P 6800 950
+F 0 "J302" H 6700 1050 50  0000 L CNN
+F 1 "Jumper_3_Open" V 6755 1037 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6800 950 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 6800 950 50  0001 C CNN
+F 4 "Molex" H 6800 950 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 6800 950 50  0001 C CNN "Product code"
+	1    6800 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J320
+U 1 1 5D8AABFA
+P 10400 3800
+F 0 "J320" H 10500 3500 50  0000 R CNN
+F 1 "E1" H 10450 4000 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 10400 3400 50  0001 C CNN
+F 3 "https://www.molex.com/webdocs/datasheets/pdf/en-us/0022272041_PCB_HEADERS.pdf" H 11850 3800 60  0001 C CNN
+F 4 "Molex" H 10400 3800 50  0001 C CNN "Manufacturer"
+F 5 "22272041" H 10400 3800 50  0001 C CNN "Product code"
+	1    10400 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J332
+U 1 1 5D8AB302
+P 10400 5800
+F 0 "J332" H 10500 5500 50  0000 R CNN
+F 1 "E2" H 10450 6000 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 10400 5400 50  0001 C CNN
+F 3 "https://www.molex.com/webdocs/datasheets/pdf/en-us/0022272041_PCB_HEADERS.pdf" H 11850 5800 60  0001 C CNN
+F 4 "Molex" H 10400 5800 50  0001 C CNN "Manufacturer"
+F 5 "22272041" H 10400 5800 50  0001 C CNN "Product code"
+	1    10400 5800
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J319
+U 1 1 5D8AD365
+P 5200 3800
+F 0 "J319" H 5300 3500 50  0000 R CNN
+F 1 "Y" H 5250 4000 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 5200 3400 50  0001 C CNN
+F 3 "https://www.molex.com/webdocs/datasheets/pdf/en-us/0022272041_PCB_HEADERS.pdf" H 6650 3800 60  0001 C CNN
+F 4 "Molex" H 5200 3800 50  0001 C CNN "Manufacturer"
+F 5 "22272041" H 5200 3800 50  0001 C CNN "Product code"
+	1    5200 3800
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J307
+U 1 1 5D8ADF1E
+P 5200 1800
+F 0 "J307" H 5300 1500 50  0000 R CNN
+F 1 "X" H 5250 2000 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 5200 1400 50  0001 C CNN
+F 3 "https://www.molex.com/webdocs/datasheets/pdf/en-us/0022272041_PCB_HEADERS.pdf" H 6650 1800 60  0001 C CNN
+F 4 "Molex" H 5200 1800 50  0001 C CNN "Manufacturer"
+F 5 "22272041" H 5200 1800 50  0001 C CNN "Product code"
+	1    5200 1800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4850 1750 4900 1750
+Wire Wire Line
+	4850 2050 4950 2050
+Wire Wire Line
+	4850 3750 4900 3750
+Wire Wire Line
+	4850 4050 4950 4050
+$Comp
+L Jumper:Jumper_3_Open J311
+U 1 1 5EC47CF3
+P 5200 2350
+F 0 "J311" H 5100 2450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 5155 2437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5200 2350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 5200 2350 50  0001 C CNN
+F 4 "Molex" H 5200 2350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 5200 2350 50  0001 C CNN "Product code"
+	1    5200 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 2250 5000 2250
+Wire Wire Line
+	5000 2250 5000 2100
+Wire Wire Line
+	4850 2350 5000 2350
+Wire Wire Line
+	5000 2350 5000 2600
+Wire Wire Line
+	5000 2100 5200 2100
+Wire Wire Line
+	5000 2600 5200 2600
+Text GLabel 5400 2350 2    50   Input ~ 0
+X_MIN
+Wire Wire Line
+	5350 2350 5400 2350
+Wire Wire Line
+	4850 1600 5000 1600
+Wire Wire Line
+	4900 1750 4900 1700
+Wire Wire Line
+	4900 1700 5000 1700
+Wire Wire Line
+	4900 1800 5000 1800
+Wire Wire Line
+	4950 1900 5000 1900
+Wire Wire Line
+	4900 1800 4900 1900
+Wire Wire Line
+	4950 1900 4950 2050
+Wire Wire Line
+	4850 3600 5000 3600
+Wire Wire Line
+	4900 3750 4900 3700
+Wire Wire Line
+	4900 3700 5000 3700
+Wire Wire Line
+	4900 3800 5000 3800
+Wire Wire Line
+	4950 3900 5000 3900
+Wire Wire Line
+	4950 3900 4950 4050
+Wire Wire Line
+	4900 3800 4900 3900
+$Comp
+L Jumper:Jumper_3_Open J323
+U 1 1 5EEDD706
+P 5150 4350
+F 0 "J323" H 5050 4450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 5105 4437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5150 4350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 5150 4350 50  0001 C CNN
+F 4 "Molex" H 5150 4350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 5150 4350 50  0001 C CNN "Product code"
+	1    5150 4350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4850 4250 5000 4250
+Wire Wire Line
+	5000 4250 5000 4100
+Wire Wire Line
+	5000 4100 5150 4100
+Wire Wire Line
+	4850 4350 5000 4350
+Wire Wire Line
+	5000 4350 5000 4600
+Wire Wire Line
+	5000 4600 5150 4600
+Text GLabel 5350 4350 2    50   Input ~ 0
+Y_MIN
+Wire Wire Line
+	5300 4350 5350 4350
+Wire Wire Line
+	4850 6250 5000 6250
+Wire Wire Line
+	4850 6350 5000 6350
+$Comp
+L Jumper:Jumper_3_Open J312
+U 1 1 5EFBBB3A
+P 10400 2350
+F 0 "J312" H 10300 2450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 10355 2437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10400 2350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 10400 2350 50  0001 C CNN
+F 4 "Molex" H 10400 2350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 10400 2350 50  0001 C CNN "Product code"
+	1    10400 2350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10050 2250 10250 2250
+Wire Wire Line
+	10250 2250 10250 2100
+Wire Wire Line
+	10250 2100 10400 2100
+Wire Wire Line
+	10050 2350 10250 2350
+Wire Wire Line
+	10250 2350 10250 2600
+Wire Wire Line
+	10250 2600 10400 2600
+Wire Wire Line
+	10150 1900 10200 1900
+Wire Wire Line
+	10100 1800 10200 1800
+Wire Wire Line
+	10100 1750 10100 1700
+Wire Wire Line
+	10100 1700 10200 1700
+Wire Wire Line
+	10100 1800 10100 1900
+Wire Wire Line
+	10150 1900 10150 2050
+Wire Wire Line
+	10050 1600 10200 1600
+Text GLabel 10600 2350 2    50   Input ~ 0
+X_MAX
+Wire Wire Line
+	10550 2350 10600 2350
+$Comp
+L Jumper:Jumper_3_Open J324
+U 1 1 5F0CC546
+P 10400 4350
+F 0 "J324" H 10300 4450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 10355 4437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10400 4350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 10400 4350 50  0001 C CNN
+F 4 "Molex" H 10400 4350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 10400 4350 50  0001 C CNN "Product code"
+	1    10400 4350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open J336
+U 1 1 5F0CE166
+P 10400 6350
+F 0 "J336" H 10300 6450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 10355 6437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10400 6350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 10400 6350 50  0001 C CNN
+F 4 "Molex" H 10400 6350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 10400 6350 50  0001 C CNN "Product code"
+	1    10400 6350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10100 3750 10100 3700
+Wire Wire Line
+	10100 3700 10200 3700
+Wire Wire Line
+	10100 3800 10200 3800
+Wire Wire Line
+	10150 3900 10200 3900
+Wire Wire Line
+	10050 4250 10200 4250
+Wire Wire Line
+	10200 4250 10200 4100
+Wire Wire Line
+	10200 4100 10400 4100
+Wire Wire Line
+	10050 4350 10200 4350
+Wire Wire Line
+	10200 4350 10200 4600
+Wire Wire Line
+	10200 4600 10400 4600
+Wire Wire Line
+	10050 5750 10100 5750
+Wire Wire Line
+	10100 5750 10100 5700
+Wire Wire Line
+	10100 5700 10200 5700
+Wire Wire Line
+	10100 5800 10200 5800
+Wire Wire Line
+	10150 5900 10200 5900
+Wire Wire Line
+	10050 6250 10200 6250
+Wire Wire Line
+	10200 6250 10200 6100
+Wire Wire Line
+	10200 6100 10400 6100
+Wire Wire Line
+	10050 6350 10200 6350
+Wire Wire Line
+	10200 6350 10200 6600
+Wire Wire Line
+	10200 6600 10400 6600
+Wire Wire Line
+	10100 5800 10100 5900
+Wire Wire Line
+	10050 5600 10200 5600
+Wire Wire Line
+	10150 5900 10150 6050
+Wire Wire Line
+	10050 3600 10200 3600
+Wire Wire Line
+	10100 3800 10100 3900
+Wire Wire Line
+	10150 3900 10150 4050
+Text GLabel 10600 4350 2    50   Input ~ 0
+Y_MAX
+Text GLabel 10600 6350 2    50   Input ~ 0
+Z_MAX
+Wire Wire Line
+	10550 4350 10600 4350
+Wire Wire Line
+	10550 6350 10600 6350
+Connection ~ 3250 4750
+Wire Wire Line
+	3250 4750 3400 4750
+Connection ~ 3400 4750
+Connection ~ 3250 2750
+Wire Wire Line
+	3250 2750 3400 2750
+Connection ~ 3400 2750
+Connection ~ 3250 750 
+Wire Wire Line
+	3400 750  3250 750 
+Connection ~ 3400 750 
+Wire Wire Line
+	5000 6250 5000 6100
+Wire Wire Line
+	5000 6100 5150 6100
+Wire Wire Line
+	5000 6350 5000 6600
+Wire Wire Line
+	5000 6600 5150 6600
+Text GLabel 5350 6350 2    50   Input ~ 0
+Z_MIN
+Wire Wire Line
+	5300 6350 5350 6350
+$Comp
+L Jumper:Jumper_3_Open J335
+U 1 1 5EF4A6AB
+P 5150 6350
+F 0 "J335" H 5050 6450 50  0000 L CNN
+F 1 "Jumper_3_Open" V 5105 6437 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5150 6350 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/276/0022285034_PCB_HEADERS-228343.pdf" H 5150 6350 50  0001 C CNN
+F 4 "Molex" H 5150 6350 50  0001 C CNN "Manufacturer"
+F 5 "22285034" H 5150 6350 50  0001 C CNN "Product code"
+	1    5150 6350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J331
+U 1 1 5D8ACD14
+P 5200 5800
+F 0 "J331" H 5300 5500 50  0000 R CNN
+F 1 "Z" H 5250 6000 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-04A_1x04_P2.54mm_Vertical" H 5200 5400 50  0001 C CNN
+F 3 "https://www.molex.com/webdocs/datasheets/pdf/en-us/0022272041_PCB_HEADERS.pdf" H 6650 5800 60  0001 C CNN
+F 4 "Molex" H 5200 5800 50  0001 C CNN "Manufacturer"
+F 5 "22272041" H 5200 5800 50  0001 C CNN "Product code"
+	1    5200 5800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	4850 5900 4900 5900
+Wire Wire Line
+	4850 6050 4950 6050
+Wire Wire Line
+	4950 5900 5000 5900
+Wire Wire Line
+	4950 5900 4950 6050
+Wire Wire Line
+	4900 5800 4900 5900
+Wire Wire Line
+	4900 5800 5000 5800
+Wire Wire Line
+	4850 5600 5000 5600
+Wire Wire Line
+	4850 5750 4900 5750
+Wire Wire Line
+	4900 5750 4900 5700
+Wire Wire Line
+	4900 5700 5000 5700
+Text GLabel 4100 750  0    60   Input ~ 0
++VMB
+Wire Wire Line
+	4100 750  4200 750 
+Text GLabel 4100 2750 0    60   Input ~ 0
++VMB
+Wire Wire Line
+	4100 2750 4200 2750
+Text GLabel 4100 4750 0    60   Input ~ 0
++VMB
+Wire Wire Line
+	4100 4750 4200 4750
+Text GLabel 9300 750  0    60   Input ~ 0
++VMB
+Wire Wire Line
+	9300 750  9400 750 
+Wire Wire Line
+	10050 750  9600 750 
+Text GLabel 9300 2750 0    60   Input ~ 0
++VMB
+Wire Wire Line
+	9300 2750 9400 2750
+Wire Wire Line
+	9600 2750 10050 2750
+Connection ~ 10050 2750
+Text GLabel 9250 4750 0    60   Input ~ 0
++VMB
+Wire Wire Line
+	9250 4750 9350 4750
+Wire Wire Line
+	10050 4750 9550 4750
+Text GLabel 4150 7350 3    60   Output ~ 0
++VMB
+$Comp
+L power:+3V3 #PWR0325
+U 1 1 5F0E7808
+P 4450 7100
+F 0 "#PWR0325" H 4450 6950 50  0001 C CNN
+F 1 "+3V3" H 4465 7273 50  0000 C CNN
+F 2 "" H 4450 7100 50  0001 C CNN
+F 3 "" H 4450 7100 50  0001 C CNN
+	1    4450 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3850 7100 0    50   Input ~ 0
++5VI
+$Comp
+L Jumper:SolderJumper_3_Bridged12 JP301
+U 1 1 5F18B67C
+P 4150 7100
+F 0 "JP301" H 4150 7213 50  0000 C CNN
+F 1 "SolderJumper_3_Bridged12" H 4150 7214 50  0001 C CNN
+F 2 "" H 4150 7100 50  0001 C CNN
+F 3 "~" H 4150 7100 50  0001 C CNN
+	1    4150 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 7100 3950 7100
+Wire Wire Line
+	4150 7250 4150 7350
+Wire Wire Line
+	4350 7100 4450 7100
+Wire Notes Line
+	3550 6850 3550 7750
+Wire Notes Line
+	3550 7750 4650 7750
+Wire Notes Line
+	4650 7750 4650 6850
+Wire Notes Line
+	4650 6850 3550 6850
+$EndSCHEMATC

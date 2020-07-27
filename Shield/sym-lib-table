@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Ramps_EVO)(type Legacy)(uri "${KIPRJMOD}/library/Ramps EVO.lib")(options "")(descr ""))
+  (lib (name Ramps-EVO-rescue)(type Legacy)(uri "${KIPRJMOD}/Ramps EVO-rescue.lib")(options "")(descr ""))
+)
